@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:ndroid="http://schemas.android.com/apk/res-auto"
+          package="com.weather.mini.c15.c15weathermonitoring">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/php2d"
+            android:label="Php2d UNIS Hidroponik"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".VolumeAirHidroponik"
+                  android:label="Monitoring Volume Air Bak"
+                  android:parentActivityName=".ActivityPilihan">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ActivityPilihan"/>
+        </activity>
+        <activity
+                android:name=".About"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name=".TentangHidroponik"
+                android:label="Tentang Hidroponik"
+                android:parentActivityName=".ActivityPilihan">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ActivityPilihan"/>
+        </activity>
+        <activity
+                android:name=".Monitoringsuhu"
+                android:label="Monitoring suhu"
+                android:parentActivityName=".ActivityPilihan">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ActivityPilihan"/>
+        </activity>
+        <activity
+                android:name=".NutrisiTanaman"
+                android:label="Monitoring Nutrisi"
+                android:parentActivityName=".ActivityPilihan">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ActivityPilihan"/>
+        </activity>
+        <activity
+                android:name=".Ph"
+                android:label="Monitoring PH"
+                android:parentActivityName=".ActivityPilihan">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ActivityPilihan"/>
+        </activity>
+        <activity
+                android:name=".Kelembaban"
+                android:label="Monitoring Kelembaban"
+                android:parentActivityName=".ActivityPilihan">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ActivityPilihan"/>
+        </activity>
+        <activity android:name=".LayoutKategoriActivity">
+        </activity>
+        <activity
+                android:name=".ActivityPilihan"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name=".Welcomepage"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

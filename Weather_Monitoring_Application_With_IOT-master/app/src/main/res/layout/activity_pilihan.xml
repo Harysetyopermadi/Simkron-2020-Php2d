@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".ActivityPilihan">
+
+    <LinearLayout
+            android:id="@+id/lyt1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="2"
+    >
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:src="@drawable/unis"
+                android:layout_marginLeft="10dp"
+        />
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:src="@drawable/tegalkunirkidul"
+                android:layout_marginLeft="10dp"
+        />
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/himauntika"
+        />
+
+        <TextView
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sistem Monitoring Tanaman Hidroponik"
+        />
+        <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+
+                android:src="@drawable/php2d"
+        />
+
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_below="@id/lyt1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<RelativeLayout
+        android:layout_below="@+id/lyt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <include
+            android:id="@+id/llBanner"
+            layout="@layout/layout_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+
+    <include
+            layout="@layout/layout_kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llBanner"
+            android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
